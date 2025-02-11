@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-section">
+        <h2>Registration</h2>
+        <button id="toggleDarkMode">Dark Mode</button>
+    </header>
+    
+    <main class="form-section">
+        <form id="registrationForm">
+            <div class="form-group name-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name">
+                <span class="error" id="nameError">Name must be at least 5 characters</span>
+            </div>
+            <div class="form-group email-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+                <span class="error" id="emailError">Enter a valid email</span>
+            </div>
+            <div class="form-group phone-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter 10-digit number">
+                <span class="error" id="phoneError">Phone number must be 10 digits and not '123456789'</span>
+            </div>
+            <div class="form-group password-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create password">
+                <span class="error" id="passwordError">Password must be at least 8 characters and cannot be 'password' or your name</span>
+            </div>
+            <div class="form-group confirm-password-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+                <span class="error" id="confirmPasswordError">Passwords must match</span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
